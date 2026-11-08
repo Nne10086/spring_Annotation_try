@@ -1,0 +1,8 @@
+实现FactoryBean接口，并填入泛型（生成bean类型），实现getObject（返回对象），getObjectType（bean类型）
+，isSingleton（是否为单实例）
+
+FactoryBean默认返回对象为getObject对象，即getBean用getObject返回类型的类接收，不是FactoryBean本身
+
+如果想返回FactoryBean本身，在id前加入&即可（Compopnent与Import默认id均为首字母小写的类名）
+FactroyBean本身作为bean会经历BeanPsotProcess，但是他创造出来的对象不会经历BeanPsotProcess
+（BeanPostProcess：bean后置处理器，负责对bean初始化前后操作）

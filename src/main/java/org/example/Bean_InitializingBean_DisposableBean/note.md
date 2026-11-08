@@ -1,0 +1,2 @@
+实现InitialzingBean的afterPropeiesSet方法，完成初始化方法
+实现DisposableBean的destroy方法，完成销毁方法

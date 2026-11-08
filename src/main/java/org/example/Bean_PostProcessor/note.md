@@ -1,0 +1,5 @@
+BeanPostProcessor：bean后置处理（接口），不负责初始化和销毁，负责初始化前后操作
+包含postProcessBeforeInitialization:初始化前操作
+postProcessAfterInitialization:初始化后操作
+两方法可返回原bean，也可以返回包装后的bean
+实现接口需要单独一个类
